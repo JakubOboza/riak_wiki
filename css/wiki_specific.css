@@ -185,3 +185,8 @@ span.error_span {
 ul.dropdown {
    z-index: 1
 }
+
+#social-buttons{
+  float: right;
+  width: 200px;
+}

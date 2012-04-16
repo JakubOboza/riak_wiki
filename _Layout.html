@@ -40,6 +40,8 @@
 
   <body>
 
+<div id="fb-root"></div>
+
     <a id="github-ribbon" href="http://github.com/basho/riak_wiki">Fork me on GitHub</a>
     <div id="container">
       <header>
@@ -79,7 +81,14 @@
 
           <hgroup>
             <h1>{{ page.title }}</h1>
+
+            <div id="social-buttons">
+              <div class="fb-like" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+              <g:plusone annotation="inline"></g:plusone>
+            </div>
+
             <div class="clearfix"></div>
+
           </hgroup>
 
           {{ page.content }}
@@ -157,6 +166,25 @@
     <script type="text/javascript"> document.write('<scr'+'ipt type="text/javascript" src="' + document.location.protocol + '//munchkin.marketo.net/munchkin.js"><\/scr'+'ipt>');</script>
     <script>mktoMunchkin("721-DGT-611");</script>
 
+
+    <!-- Facepalm thing -->
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1&appId=353871734625689";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+     <!-- Google Minus thing -->
+    <script type="text/javascript">
+    (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+    </script>
 
   </body>
 </html>
